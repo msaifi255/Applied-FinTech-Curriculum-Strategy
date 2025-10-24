@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied FinTech Strategy and Market Alignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 280px;
+            max-height: 350px;
+        }
+        @media (min-width: 640px) {
+             .chart-container {
+                 height: 300px;
+            }
+        }
+        /* Minimal Palette: Primary Charcoal (#374151), Accent Terracotta (#C2410C), Neutral Grays */
+        .color-primary { color: #374151; }
+        .color-accent { color: #C2410C; }
+        .bg-primary { background-color: #374151; }
+        .bg-accent { background-color: #C2410C; }
+        .border-primary { border-color: #374151; }
+        .border-accent { border-color: #C2410C; }
+
+        /* Ensure tables have proper borders in minimal design */
+        table, th, td {
+            border: 1px solid #E5E7EB;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 12px;
+        }
+        thead {
+           background-color: #F3F4F6;
+           color: #374151;
+           font-weight: 600;
+        }
+        .ref-list a {
+            color: #C2410C;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-700 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white p-6 md:p-8 text-center shadow-md">
+        <h1 class="text-2xl md:text-3xl font-bold mb-1">Applied FinTech Curriculum Strategy</h1>
+        <p class="text-md md:text-lg text-gray-400">Addressing the Jordanian Financial Sector's Skills Requirements</p>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="container mx-auto px-4 py-8 md:py-10">
+        <div class="space-y-8">
+
+            <!-- Section 1: The Challenge -->
+            <section id="challenge" class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-primary">
+                <h2 class="text-xl font-bold color-primary mb-3">1. Industry Challenge: Digital Skills Gap</h2>
+                <p class="mb-4 text-sm">Jordan's financial sector is rapidly digitizing, creating a gap between traditional academic outputs and industry needs. Banks increasingly require technical and analytical skills for entry-level roles, moving beyond conventional operational positions.</p>
+                <div class="p-4 bg-gray-50 rounded border border-gray-200">
+                    <p class="text-md font-semibold mb-2 color-accent">Key In-Demand Competencies:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                        <li>Analytical Thinking & Digital Literacy</li>
+                        <li>Data Analysis & AI/ML Familiarity (&gt;50% of entry roles)</li>
+                        <li>Effective Communication</li>
+                    </ul>
+                    <p class="mt-3 text-xs text-gray-500 italic">Source: Association of Banks in Jordan (ABJ) Study [See Ref. 1]</p>
+                </div>
+            </section>
+
+            <!-- Section 2 & 3 Combined: Rationale & Solution -->
+             <section id="solution" class="bg-white rounded-lg shadow-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6 border-l-4 border-accent">
+                <div>
+                    <h2 class="text-xl font-bold color-accent mb-3">2. Conceptual Approach: Applied Science</h2>
+                    <p class="mb-4 text-sm">The curriculum prioritizes an **Applied Science** model, focusing on equipping graduates with the ability to utilize existing technologies and data to solve specific, real-world financial problems, rather than focusing purely on theoretical development.</p>
+                     <div class="overflow-x-auto">
+                        <table class="w-full text-xs text-left">
+                            <thead>
+                                <tr>
+                                    <th>Focus</th>
+                                    <th>Applied Science (Curriculum Goal)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white">
+                                <tr>
+                                    <td class="font-semibold">Goal</td>
+                                    <td>Solve business problems; deliver solutions.</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">Skill</td>
+                                    <td>Tool proficiency; Domain integration.</td>
+                                </tr>
+                                <tr>
+                                     <td class="font-semibold">Output</td>
+                                     <td>Actionable models, insights, products.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                     </div>
+                </div>
+                 <div>
+                    <h2 class="text-xl font-bold color-primary mb-3">3. Proposed Solution: The 30 C.H. FinTech Minor</h2>
+                    <p class="mb-4 text-sm">A focused 10-course minor designed for Finance/Business majors within a standard 132 C.H. program. Aims to develop a **FinTech Subject Matter Expert (SME)** capable of bridging business needs and technical possibilities.</p>
+                    <div class="text-center p-4 bg-gray-50 rounded border border-gray-200 text-sm">
+                        <span class="font-semibold">Finance Major Core</span> <span class="mx-1 font-bold color-accent">+</span> <span class="font-semibold">30 C.H. Applied Tech Minor</span> <span class="mx-1 font-bold color-accent">=</span> <span class="font-bold text-md color-primary block mt-1">Market-Ready FinTech Innovator</span>
+                    </div>
+                 </div>
+            </section>
+
+
+            <!-- Section 4: Curriculum Breakdown -->
+            <section id="curriculum" class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold color-primary mb-4">4. Curriculum Structure (30 Credit Hours)</h2>
+                <p class="text-sm mb-4">The minor progresses through three phases: foundational technical literacy, core application skills, and innovation leadership.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <div class="space-y-4 text-sm">
+                            <div class="p-3 border border-gray-200 rounded bg-gray-50">
+                                <h3 class="font-semibold color-primary mb-1">Phase 1: Foundations (6 C.H.)</h3>
+                                <p class="text-gray-600">Python Scripting, SQL & Data Management.</p>
+                            </div>
+                             <div class="p-3 border border-gray-200 rounded bg-gray-50">
+                                <h3 class="font-semibold color-accent mb-1">Phase 2: Core Applications (15 C.H.)</h3>
+                                <p class="text-gray-600">Digital Payments/APIs, Blockchain Concepts, ML for Risk/Fraud, Advanced Financial Modeling, Cybersecurity/RegTech.</p>
+                            </div>
+                             <div class="p-3 border border-gray-200 rounded bg-gray-50">
+                                <h3 class="font-semibold color-primary mb-1">Phase 3: Innovation (9 C.H.)</h3>
+                                <p class="text-gray-600">BI & Data Storytelling, AI Applications & Ethics, Capstone Project.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="chart-container">
+                        <canvas id="curriculumChart"></canvas>
+                        <p class="text-center text-xs text-gray-500 mt-2">Credit Hour Distribution by Phase</p>
+                    </div>
+                </div>
+            </section>
+
+             <!-- Section 5: Market Alignment -->
+             <section id="market" class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold color-accent mb-4">5. Market Alignment: Targeted Job Roles in Jordan</h2>
+                <p class="mb-4 text-sm">The curriculum is directly mapped to specific high-demand roles within Jordan's evolving financial sector.</p>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-xs text-left">
+                        <thead>
+                            <tr>
+                                <th>Target Job Role</th>
+                                <th>Key Minor Skills/Courses</th>
+                                <th>Relevance</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <tr>
+                                <td class="font-semibold">Digital Transformation Officer</td>
+                                <td>Payments/APIs, RegTech, AI Apps</td>
+                                <td>Drives tech integration strategy [Ref. 5].</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Financial Data / BI Analyst</td>
+                                <td>SQL, Python, BI/Storytelling</td>
+                                <td>Core data analysis & reporting needs [Ref. 1, 2].</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Tech Risk / Compliance Analyst</td>
+                                <td>ML for Risk, Cybersecurity/RegTech</td>
+                                <td>Manages risk using tech; ensures compliance [Ref. 3].</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">FinTech Product Owner</td>
+                                 <td>Capstone, Payments/APIs, AI Apps</td>
+                                 <td>Defines & guides FinTech product development [Ref. 4].</td>
+                             </tr>
+                        </tbody>
+                    </table>
+                </div>
+             </section>
+
+            <!-- Section 6: Case Study -->
+             <section id="casestay" class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-primary">
+                <h2 class="text-xl font-bold color-primary mb-3">6. Validation: Applied Innovation Case Study</h2>
+                <p class="text-sm mb-3">A marketing professional, with minimal Python training, successfully automated internal team processes. This initiative filled an operational need unmet by the core development team, leading to recognition and a new role facilitating collaboration between business and technical units.</p>
+                <blockquote class="border-l-4 border-accent pl-4 italic text-gray-600 text-sm mb-3">
+                    "This demonstrates the significant value created when business professionals can directly apply basic technology skills to solve domain-specific problems, embodying the FinTech SME."
+                </blockquote>
+                <p class="text-sm">The proposed minor cultivates this capability, preparing graduates to identify opportunities and implement practical, tech-enabled solutions.</p>
+             </section>
+             
+             <!-- Section 7: References -->
+             <section id="references" class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold color-primary mb-4">7. Direct Reference Links</h2>
+                <ol class="list-decimal list-inside text-sm ref-list space-y-2 text-gray-700">
+                    <li id="ref1"><span class="font-semibold">[1] ABJ Study:</span> Association of Banks in Jordan report on the digital skills gap and in-demand roles. <a href="https://jordantimes.com/news/local/jordans-banking-sector-faces-critical-skills-gap-digital-transformation-accelerates-abj" target="_blank" rel="noopener noreferrer">Source Link (Jordan Times)</a></li>
+                    <li id="ref2"><span class="font-semibold">[2] MoDEE/WB Analysis:</span> Jordan Digital Skills Supply and Demand Gap Analysis (MoDEE/World Bank). <a href="https://modee.gov.jo/EBV4.0/Root_Storage/EN/husam/Jordan_Digital_Skills_Supply_and_Demand_Gap_Analysis.pdf" target="_blank" rel="noopener noreferrer">Source Link (PDF)</a></li>
+                    <li id="ref3"><span class="font-semibold">[3] ASU Program:</span> Applied Science Private University FinTech and Risk Management Program. <a href="https://www.asu.edu.jo/en/Economics/FinancialTechnology/Pages/Overview.aspx" target="_blank" rel="noopener noreferrer">Source Link</a></li>
+                    <li id="ref4"><span class="font-semibold">[4] Job Postings:</span> General FinTech Product Owner job postings in Amman (Bayt.com/Ahli Bank) reflecting core skill requirements. <a href="https://careers.ahli.com/ar/jordan/jobs/investment-analyst-fintech-programs-4750198/" target="_blank" rel="noopener noreferrer">Source Link (Jordan Ahli Bank Example)</a></li>
+                    <li id="ref5"><span class="font-semibold">[5] CBJ Vision:</span> Central Bank of Jordan FinTech Vision and strategy for the financial sector. <a href="https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/Booklet_English_Small.pdf" target="_blank" rel="noopener noreferrer">Source Link (CBJ PDF)</a></li>
+                    <li id="ref6"><span class="font-semibold">[6] Curriculum Research:</span> Academic guidelines for FinTech curriculum design in higher education (e.g., ResearchGate). <a href="https://www.researchgate.net/publication/354963701_Designing_the_guidelines_for_FinTech_curriculum" target="_blank" rel="noopener noreferrer">Source Link (ResearchGate)</a></li>
+                </ol>
+             </section>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-primary text-white mt-10 shadow-inner">
+        <div class="container mx-auto px-6 py-8">
+            <!-- Main Footer Content -->
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 border-b border-gray-600 pb-6 mb-6">
+                <div class="text-center md:text-left">
+                    <h3 class="text-lg font-semibold mb-2">Applied FinTech Curriculum Strategy</h3>
+                    <p class="text-sm text-gray-300">Addressing the Jordanian Financial Sector's Skills Requirements</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <div>
+                        <p class="text-sm font-medium text-gray-300">Prepared by</p>
+                        <p class="text-lg font-bold">Mohammad Sayfe</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 space-y-2 md:space-y-0">
+                <div>
+                    <p>Source: Applied FinTech Curriculum Strategy document. See Section 7 for References.</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="font-medium">October 25, 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Chart.js Configuration
+        // Minimal Palette: Primary Charcoal (#374151), Accent Terracotta (#C2410C), Neutral Gray (#9CA3AF)
+
+        // Tooltip Config (Mandatory)
+        const tooltipConfig = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        // Curriculum Donut Chart
+        const ctxCurriculum = document.getElementById('curriculumChart').getContext('2d');
+        new Chart(ctxCurriculum, {
+            type: 'doughnut',
+            data: {
+                labels: ['Foundations (6 C.H.)', 'Core Apps (15 C.H.)', 'Innovation (9 C.H.)'],
+                datasets: [{
+                    label: 'Credit Hours',
+                    data: [6, 15, 9],
+                    backgroundColor: [
+                        '#C2410C', // Terracotta Accent
+                        '#374151', // Charcoal Primary
+                        '#9CA3AF', // Lighter Neutral Gray
+                    ],
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                 ...tooltipConfig,
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '60%',
+                plugins: {
+                    ...tooltipConfig.plugins,
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#374151',
+                            padding: 15,
+                            font: {
+                                size: 10
+                            }
+                        }
+                    },
+                    title: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+    </script>
+
+</body>
+</html>
