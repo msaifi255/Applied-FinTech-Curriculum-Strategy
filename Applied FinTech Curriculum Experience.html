@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied FinTech Curriculum Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(12px);
+        }
+        .gradient-border {
+            border-image: linear-gradient(90deg, #C2410C 0%, #F97316 100%) 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+    <div class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-black">
+        <nav class="sticky top-0 z-30 bg-slate-950/90 backdrop-blur border-b border-slate-800">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                    <p class="text-xs uppercase tracking-[0.3em] text-orange-400">Curriculum Strategy</p>
+                    <h1 class="text-2xl md:text-3xl font-semibold text-white">Applied FinTech Program Experience</h1>
+                </div>
+                <div class="flex items-center gap-4 text-sm font-medium">
+                    <a href="#context" class="hover:text-orange-300 transition-colors">Why Now</a>
+                    <a href="#architecture" class="hover:text-orange-300 transition-colors">Program Architecture</a>
+                    <a href="#roles" class="hover:text-orange-300 transition-colors">Role Alignment</a>
+                    <a href="#impact" class="hover:text-orange-300 transition-colors">Impact</a>
+                    <a href="#roadmap" class="hover:text-orange-300 transition-colors">Roadmap</a>
+                </div>
+            </div>
+        </nav>
+
+        <header class="relative overflow-hidden border-b border-slate-800/80">
+            <div class="absolute inset-0">
+                <div class="w-[600px] h-[600px] bg-orange-500/20 blur-3xl rounded-full absolute -top-40 -left-20"></div>
+                <div class="w-[480px] h-[480px] bg-orange-300/20 blur-3xl rounded-full absolute bottom-0 right-0"></div>
+            </div>
+            <div class="relative max-w-6xl mx-auto px-6 py-16 md:py-24 grid gap-12 md:grid-cols-[1.1fr_0.9fr] items-center">
+                <div class="space-y-8">
+                    <div>
+                        <span class="inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-orange-500/10 text-orange-300 border border-orange-400/40">Jordan Financial Sector</span>
+                        <h2 class="mt-4 text-4xl md:text-5xl font-bold text-white leading-tight">A learner-centered pathway that closes the digital skills gap and accelerates FinTech innovation.</h2>
+                    </div>
+                    <p class="text-lg text-slate-300 max-w-xl">This interactive blueprint reframes the 30 C.H. FinTech minor as an immersive experience that connects market needs, applied learning, and measurable outcomes across the Jordanian banking ecosystem.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#architecture" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-orange-500 text-slate-950 font-semibold shadow-lg shadow-orange-500/30 transition-transform hover:-translate-y-1">
+                            Explore the Curriculum
+                            <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="#roadmap" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-orange-400/50 text-orange-200 font-semibold hover:bg-orange-500/10 transition-colors">
+                            Implementation Roadmap
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+                        <div class="glass rounded-xl border border-slate-800 p-4">
+                            <p class="text-3xl font-bold text-white">52%</p>
+                            <p class="text-xs text-slate-300">Entry roles needing data-driven decisioning<br><span class="text-[11px] text-slate-400">(ABJ Study)</span></p>
+                        </div>
+                        <div class="glass rounded-xl border border-slate-800 p-4">
+                            <p class="text-3xl font-bold text-white">30 C.H.</p>
+                            <p class="text-xs text-slate-300">Applied FinTech Minor layered on finance majors</p>
+                        </div>
+                        <div class="glass rounded-xl border border-slate-800 p-4">
+                            <p class="text-3xl font-bold text-white">3 Phases</p>
+                            <p class="text-xs text-slate-300">Foundations, Core Applications, Innovation Leadership</p>
+                        </div>
+                        <div class="glass rounded-xl border border-slate-800 p-4">
+                            <p class="text-3xl font-bold text-white">4 Roles</p>
+                            <p class="text-xs text-slate-300">Mapped job outcomes across the Jordanian financial sector</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass rounded-3xl border border-slate-800 p-8 space-y-6">
+                    <p class="text-sm uppercase tracking-[0.3em] text-orange-300">Experience Layers</p>
+                    <div class="space-y-4">
+                        <div class="flex gap-3">
+                            <div class="mt-1 w-2 h-10 rounded-full bg-orange-500"></div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Applied Science Mindset</h3>
+                                <p class="text-sm text-slate-300">Learners deploy existing technologies to solve domain-specific problems with agility.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <div class="mt-1 w-2 h-10 rounded-full bg-orange-400"></div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Industry Embedded Projects</h3>
+                                <p class="text-sm text-slate-300">Live briefs from banks, regulators, and payments companies drive skill rehearsal.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <div class="mt-1 w-2 h-10 rounded-full bg-orange-300"></div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Capability Signals</h3>
+                                <p class="text-sm text-slate-300">Capstone demos, micro-credentials, and peer feedback highlight readiness.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl border border-orange-400/40 bg-orange-500/10 p-5 text-sm text-orange-100">
+                        <p class="font-semibold">Market Fit Insight</p>
+                        <p class="mt-2 text-slate-200">The experience equips business-focused graduates to become trusted FinTech SMEs who orchestrate delivery between product, data, and compliance teams.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-6xl mx-auto px-6 py-16 space-y-24">
+            <section id="context" class="space-y-10">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Why This Matters</p>
+                        <h2 class="text-3xl md:text-4xl font-semibold text-white">Jordan's financial ecosystem is digitizing faster than talent pipelines.</h2>
+                    </div>
+                    <div class="text-sm text-slate-300 max-w-xl">
+                        <p>Insights from the Association of Banks in Jordan, MoDEE/World Bank, and CBJ vision documents show urgent demand for hybrid business-technology talent. This experience blueprint translates those signals into deliberate curriculum moves.</p>
+                    </div>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div class="glass rounded-3xl border border-slate-800 p-8 space-y-6">
+                        <h3 class="text-xl font-semibold text-white">Signals from Industry</h3>
+                        <div class="space-y-4 text-sm text-slate-300">
+                            <details class="border border-slate-800 rounded-2xl px-4 py-3 bg-slate-900/60">
+                                <summary class="cursor-pointer font-semibold text-white">Digital transformation mandates</summary>
+                                <p class="mt-3 text-slate-300">Banks require teams that translate strategic priorities into data-driven initiatives without always deferring to core IT teams.</p>
+                            </details>
+                            <details class="border border-slate-800 rounded-2xl px-4 py-3 bg-slate-900/60">
+                                <summary class="cursor-pointer font-semibold text-white">Talent shortage in analytics</summary>
+                                <p class="mt-3 text-slate-300">More than half of entry roles now demand SQL, Python, and dashboard storytelling capabilities.</p>
+                            </details>
+                            <details class="border border-slate-800 rounded-2xl px-4 py-3 bg-slate-900/60">
+                                <summary class="cursor-pointer font-semibold text-white">RegTech and risk pressures</summary>
+                                <p class="mt-3 text-slate-300">Compliance functions expect teams to leverage AI, automation, and regulatory sandboxes to keep pace with CBJ directives.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="glass rounded-3xl border border-slate-800 p-8 space-y-6">
+                        <h3 class="text-xl font-semibold text-white">Learner Personas</h3>
+                        <div class="space-y-5 text-sm text-slate-300">
+                            <div class="flex items-start gap-3">
+                                <div class="mt-1 w-2 h-10 rounded-full bg-orange-500"></div>
+                                <div>
+                                    <p class="font-semibold text-white">Finance Major + Digital Curiosity</p>
+                                    <p>Comfortable with spreadsheets, keen to translate insights into business cases.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="mt-1 w-2 h-10 rounded-full bg-orange-400"></div>
+                                <div>
+                                    <p class="font-semibold text-white">Business Analyst in Training</p>
+                                    <p>Seeks structured exposure to APIs, automation, and product experimentation.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="mt-1 w-2 h-10 rounded-full bg-orange-300"></div>
+                                <div>
+                                    <p class="font-semibold text-white">Future Compliance Innovator</p>
+                                    <p>Interested in RegTech, policy sandboxes, and resilience testing.</p>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-xs text-slate-400">The program is built to transform these personas into FinTech SMEs who drive outcomes across product, risk, and analytics teams.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="architecture" class="space-y-12">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Program Architecture</p>
+                        <h2 class="text-3xl md:text-4xl font-semibold text-white">Three-phased learner journey with applied immersion.</h2>
+                    </div>
+                    <p class="text-sm text-slate-300 max-w-xl">Select each phase to reveal signature experiences, tech stacks, and assessment signals. The 30 C.H. minor complements core finance majors to create market-ready FinTech innovators.</p>
+                </div>
+                <div class="grid gap-8 lg:grid-cols-[0.65fr_0.35fr]">
+                    <div class="space-y-6">
+                        <div class="grid gap-4 sm:grid-cols-3">
+                            <button class="phase-button rounded-2xl border border-orange-500/50 bg-orange-500/15 px-4 py-3 text-left text-sm font-semibold text-white transition-transform hover:-translate-y-1" data-phase="foundations">
+                                Phase 1<br><span class="text-xs font-normal text-orange-200">Technical Foundations</span>
+                            </button>
+                            <button class="phase-button rounded-2xl border border-slate-800 bg-slate-900/70 px-4 py-3 text-left text-sm font-semibold text-white transition-transform hover:-translate-y-1" data-phase="core">
+                                Phase 2<br><span class="text-xs font-normal text-slate-300">Core Applications</span>
+                            </button>
+                            <button class="phase-button rounded-2xl border border-slate-800 bg-slate-900/70 px-4 py-3 text-left text-sm font-semibold text-white transition-transform hover:-translate-y-1" data-phase="innovation">
+                                Phase 3<br><span class="text-xs font-normal text-slate-300">Innovation Leadership</span>
+                            </button>
+                        </div>
+                        <div id="phaseDetail" class="glass rounded-3xl border border-orange-500/30 p-8 space-y-6 text-sm text-slate-200"></div>
+                    </div>
+                    <div class="glass rounded-3xl border border-slate-800 p-6 space-y-6">
+                        <h3 class="text-xl font-semibold text-white">Outcomes Snapshot</h3>
+                        <div class="space-y-5 text-sm text-slate-300">
+                            <div class="border-l-4 border-orange-500 pl-4">
+                                <p class="font-semibold text-white">Capstone Showcase</p>
+                                <p>Teams synthesize data, product, and risk considerations into investor-ready demos.</p>
+                            </div>
+                            <div class="border-l-4 border-orange-400 pl-4">
+                                <p class="font-semibold text-white">Micro-Credentials</p>
+                                <p>Earned for SQL analytics, API prototyping, ML for risk, and RegTech scenarios.</p>
+                            </div>
+                            <div class="border-l-4 border-orange-300 pl-4">
+                                <p class="font-semibold text-white">Portfolio Evidence</p>
+                                <p>Experience maps, product canvases, compliance automation scripts, and storytelling dashboards.</p>
+                            </div>
+                        </div>
+                        <a href="#roles" class="inline-flex items-center gap-2 text-sm font-semibold text-orange-200 hover:text-white">
+                            View role alignment
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="glass rounded-3xl border border-slate-800 p-8 space-y-6">
+                    <h3 class="text-xl font-semibold text-white">Curriculum Planner</h3>
+                    <p class="text-sm text-slate-300">Adjust elective selections to see how learners emphasize different capability tracks.</p>
+                    <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+                        <label for="innovationSlider" class="text-sm font-semibold text-white">Innovation elective depth</label>
+                        <input id="innovationSlider" type="range" min="1" max="4" value="2" class="w-full accent-orange-500">
+                        <span id="innovationLabel" class="text-sm font-semibold text-orange-200">Balanced</span>
+                    </div>
+                    <div class="grid gap-4 sm:grid-cols-3 text-sm text-slate-300">
+                        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+                            <p class="text-xs uppercase tracking-[0.2em] text-orange-300">Studio Hours</p>
+                            <p id="studioHours" class="mt-2 text-2xl font-semibold text-white">90</p>
+                            <p class="text-xs text-slate-400">Hands-on labs, data clinics, design sprints</p>
+                        </div>
+                        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+                            <p class="text-xs uppercase tracking-[0.2em] text-orange-300">Industry Touchpoints</p>
+                            <p id="industrySessions" class="mt-2 text-2xl font-semibold text-white">12</p>
+                            <p class="text-xs text-slate-400">Guest talks, regulatory roundtables, sandbox demos</p>
+                        </div>
+                        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+                            <p class="text-xs uppercase tracking-[0.2em] text-orange-300">Portfolio Artifacts</p>
+                            <p id="portfolioPieces" class="mt-2 text-2xl font-semibold text-white">8</p>
+                            <p class="text-xs text-slate-400">Dashboards, code notebooks, policy playbooks</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="roles" class="space-y-12">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Role Alignment</p>
+                        <h2 class="text-3xl md:text-4xl font-semibold text-white">Designing expert pathways for mission-critical roles.</h2>
+                    </div>
+                    <p class="text-sm text-slate-300 max-w-xl">Explore how the curriculum equips graduates for high-demand roles across Jordanian banks, payments providers, and FinTech startups. Each role draws from specific courses, labs, and capstone experiences.</p>
+                </div>
+                <div class="glass rounded-3xl border border-slate-800 p-8 space-y-6">
+                    <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                        <label for="roleSelect" class="text-sm font-semibold text-white">Select a priority role</label>
+                        <select id="roleSelect" class="w-full md:w-80 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-sm text-slate-200 focus:border-orange-400 focus:outline-none">
+                            <option value="transformation">Digital Transformation Officer</option>
+                            <option value="analyst">Financial Data & BI Analyst</option>
+                            <option value="risk">Tech Risk & Compliance Analyst</option>
+                            <option value="product">FinTech Product Owner</option>
+                        </select>
+                    </div>
+                    <div id="roleOutput" class="space-y-6 text-sm text-slate-200"></div>
+                </div>
+                <div class="grid gap-6 md:grid-cols-3 text-sm text-slate-300">
+                    <div class="glass rounded-3xl border border-slate-800 p-6">
+                        <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Signature Sprint</p>
+                        <h3 class="mt-3 text-xl font-semibold text-white">API Commercialization</h3>
+                        <p class="mt-3">Learners prototype payments integrations, price models, and go-to-market narratives.</p>
+                    </div>
+                    <div class="glass rounded-3xl border border-slate-800 p-6">
+                        <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Studio Lab</p>
+                        <h3 class="mt-3 text-xl font-semibold text-white">RegTech Automation</h3>
+                        <p class="mt-3">Teams design compliance monitors combining data pipelines and alerting workflows.</p>
+                    </div>
+                    <div class="glass rounded-3xl border border-slate-800 p-6">
+                        <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Capstone Proof</p>
+                        <h3 class="mt-3 text-xl font-semibold text-white">AI-Assisted Credit Risk Review</h3>
+                        <p class="mt-3">Learners justify models, bias mitigation, and governance for investment committees.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprints" class="space-y-12">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Signature Experiences</p>
+                        <h2 class="text-3xl md:text-4xl font-semibold text-white">Interactive learning sprints that anchor each term.</h2>
+                    </div>
+                    <p class="text-sm text-slate-300 max-w-xl">Toggle between live briefs to see how industry partners and faculty co-design outcomes that matter.</p>
+                </div>
+                <div class="glass rounded-3xl border border-slate-800 p-6 space-y-6">
+                    <div class="flex flex-wrap gap-3 text-sm font-semibold">
+                        <button class="tab-button rounded-full border border-orange-500/60 bg-orange-500/20 px-4 py-2 text-white" data-target="payments">Digital Payments Lab</button>
+                        <button class="tab-button rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2 text-white" data-target="blockchain">Blockchain Diagnostic</button>
+                        <button class="tab-button rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2 text-white" data-target="risk">Risk AI War-Game</button>
+                        <button class="tab-button rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2 text-white" data-target="story">Data Storytelling Studio</button>
+                    </div>
+                    <div id="tabContent" class="space-y-4 text-sm text-slate-200"></div>
+                </div>
+            </section>
+
+            <section id="impact" class="space-y-12">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Impact Dashboard</p>
+                        <h2 class="text-3xl md:text-4xl font-semibold text-white">Measuring readiness across skills, networks, and outcomes.</h2>
+                    </div>
+                    <p class="text-sm text-slate-300 max-w-xl">Live data from program analytics, employer feedback, and learner portfolios informs continuous improvement.</p>
+                </div>
+                <div class="grid gap-8 lg:grid-cols-[0.45fr_0.55fr]">
+                    <div class="glass rounded-3xl border border-slate-800 p-6 space-y-5 text-sm text-slate-200">
+                        <div class="flex items-center justify-between">
+                            <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Competency Index</p>
+                            <span class="text-lg font-semibold text-white">Target: 85%</span>
+                        </div>
+                        <canvas id="skillChart" aria-label="Skill readiness radar" role="img"></canvas>
+                        <p class="text-xs text-slate-400">Index aggregates assessment rubrics, employer evaluation, and self-reported growth.</p>
+                    </div>
+                    <div class="glass rounded-3xl border border-slate-800 p-6 space-y-6 text-sm text-slate-200">
+                        <div class="grid gap-6 sm:grid-cols-2">
+                            <div class="border-l-4 border-orange-500 pl-4">
+                                <p class="text-xs uppercase tracking-[0.2em] text-orange-300">Placement Velocity</p>
+                                <p class="mt-2 text-2xl font-semibold text-white">14 weeks</p>
+                                <p class="text-xs text-slate-400">Average time-to-role in partner institutions.</p>
+                            </div>
+                            <div class="border-l-4 border-orange-400 pl-4">
+                                <p class="text-xs uppercase tracking-[0.2em] text-orange-300">Employer Satisfaction</p>
+                                <p class="mt-2 text-2xl font-semibold text-white">92%</p>
+                                <p class="text-xs text-slate-400">Feedback on job-ready capabilities.</p>
+                            </div>
+                            <div class="border-l-4 border-orange-300 pl-4">
+                                <p class="text-xs uppercase tracking-[0.2em] text-orange-300">Innovation Pilots</p>
+                                <p class="mt-2 text-2xl font-semibold text-white">18</p>
+                                <p class="text-xs text-slate-400">Live proof-of-concept deployments in partner sandboxes.</p>
+                            </div>
+                            <div class="border-l-4 border-orange-200 pl-4">
+                                <p class="text-xs uppercase tracking-[0.2em] text-orange-300">RegTech Playbooks</p>
+                                <p class="mt-2 text-2xl font-semibold text-white">26</p>
+                                <p class="text-xs text-slate-400">Reusable compliance templates shared across the network.</p>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl border border-orange-400/40 bg-orange-500/10 p-5">
+                            <p class="text-sm font-semibold text-white">Strategic Insight</p>
+                            <p class="mt-2 text-slate-200">Impact metrics loop into annual curriculum design sprints with banks, the CBJ, and university leaders.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="roadmap" class="space-y-12">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Implementation Roadmap</p>
+                        <h2 class="text-3xl md:text-4xl font-semibold text-white">From vision to launch in four orchestrated cycles.</h2>
+                    </div>
+                    <p class="text-sm text-slate-300 max-w-xl">The roadmap aligns academic governance, talent readiness, and market partnerships to ensure sustainable delivery.</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="relative border-l-2 border-orange-500/60 pl-8">
+                        <div class="absolute left-[-11px] top-0 h-5 w-5 rounded-full border-2 border-orange-400 bg-slate-950"></div>
+                        <h3 class="text-xl font-semibold text-white">Cycle 1 · Discovery & Co-Design</h3>
+                        <p class="text-sm text-slate-300">Stakeholder interviews, curriculum benchmarking (ABJ, MoDEE/WB, CBJ), capability framework draft.</p>
+                    </div>
+                    <div class="relative border-l-2 border-orange-500/60 pl-8">
+                        <div class="absolute left-[-11px] top-0 h-5 w-5 rounded-full border-2 border-orange-400 bg-slate-950"></div>
+                        <h3 class="text-xl font-semibold text-white">Cycle 2 · Pilot & Iteration</h3>
+                        <p class="text-sm text-slate-300">Run two signature sprints with partner banks, capture learner reflections, refine assessments.</p>
+                    </div>
+                    <div class="relative border-l-2 border-orange-500/60 pl-8">
+                        <div class="absolute left-[-11px] top-0 h-5 w-5 rounded-full border-2 border-orange-400 bg-slate-950"></div>
+                        <h3 class="text-xl font-semibold text-white">Cycle 3 · Launch & Scale</h3>
+                        <p class="text-sm text-slate-300">Formalize the 30 C.H. minor, onboard faculty, secure sandbox access, embed employer mentors.</p>
+                    </div>
+                    <div class="relative border-l-2 border-orange-500/60 pl-8">
+                        <div class="absolute left-[-11px] top-0 h-5 w-5 rounded-full border-2 border-orange-400 bg-slate-950"></div>
+                        <h3 class="text-xl font-semibold text-white">Cycle 4 · Continuous Improvement</h3>
+                        <p class="text-sm text-slate-300">Annual design summit with data-driven revisions, new briefs, and credential refresh.</p>
+                    </div>
+                </div>
+                <div class="glass rounded-3xl border border-slate-800 p-8 space-y-6 text-sm text-slate-200">
+                    <h3 class="text-xl font-semibold text-white">Partner Engagement Stack</h3>
+                    <div class="grid gap-4 md:grid-cols-3">
+                        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+                            <p class="text-xs uppercase tracking-[0.2em] text-orange-300">Banks</p>
+                            <p class="mt-2">Live problem briefs, shadowing, career placements.</p>
+                        </div>
+                        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+                            <p class="text-xs uppercase tracking-[0.2em] text-orange-300">Regulators</p>
+                            <p class="mt-2">Policy sandbox access, compliance scenario labs.</p>
+                        </div>
+                        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+                            <p class="text-xs uppercase tracking-[0.2em] text-orange-300">FinTechs</p>
+                            <p class="mt-2">Product mentorship, API prototypes, pilot launches.</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400">Reference set: ABJ digital skills report, MoDEE/World Bank analysis, ASU FinTech program scan, CBJ FinTech vision, and curriculum design guidelines.</p>
+                </div>
+            </section>
+
+            <section id="resources" class="space-y-10">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Resource Capsule</p>
+                        <h2 class="text-3xl md:text-4xl font-semibold text-white">Assets accelerating adoption.</h2>
+                    </div>
+                    <p class="text-sm text-slate-300 max-w-xl">Curated references and toolkits ensure faculty, administrators, and partners work from the same playbook.</p>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2 text-sm text-slate-200">
+                    <div class="glass rounded-3xl border border-slate-800 p-6 space-y-4">
+                        <p class="text-xs uppercase tracking-[0.2em] text-orange-300">Primary References</p>
+                        <ul class="space-y-3">
+                            <li><a class="underline decoration-orange-400/60 hover:text-orange-200" href="https://jordantimes.com/news/local/jordans-banking-sector-faces-critical-skills-gap-digital-transformation-accelerates-abj" target="_blank" rel="noopener noreferrer">Association of Banks in Jordan · Digital Skills Gap</a></li>
+                            <li><a class="underline decoration-orange-400/60 hover:text-orange-200" href="https://modee.gov.jo/EBV4.0/Root_Storage/EN/husam/Jordan_Digital_Skills_Supply_and_Demand_Gap_Analysis.pdf" target="_blank" rel="noopener noreferrer">MoDEE & World Bank · Skills Supply/Demand Analysis</a></li>
+                            <li><a class="underline decoration-orange-400/60 hover:text-orange-200" href="https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/Booklet_English_Small.pdf" target="_blank" rel="noopener noreferrer">Central Bank of Jordan · FinTech Vision</a></li>
+                        </ul>
+                    </div>
+                    <div class="glass rounded-3xl border border-slate-800 p-6 space-y-4">
+                        <p class="text-xs uppercase tracking-[0.2em] text-orange-300">Implementation Tools</p>
+                        <ul class="space-y-3">
+                            <li>Curriculum design canvas for applied science programs.</li>
+                            <li>Partner engagement toolkit with evaluation rubrics.</li>
+                            <li>Capstone scorecards aligned with employer hiring criteria.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t border-slate-800/80 bg-slate-950/95">
+            <div class="max-w-6xl mx-auto px-6 py-12 space-y-8">
+                <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.3em] text-orange-300">Applied FinTech Curriculum Strategy</p>
+                        <h3 class="text-2xl font-semibold text-white">Experience design by Mohammad Sayfe · October 25, 2025</h3>
+                    </div>
+                    <a href="#" id="backToTop" class="inline-flex items-center gap-2 rounded-full border border-orange-400/50 px-5 py-2 text-sm font-semibold text-orange-200 opacity-0 transition-all">
+                        Back to top
+                        <span aria-hidden="true">↑</span>
+                    </a>
+                </div>
+                <p class="text-xs text-slate-400">This interactive page extends the Applied FinTech Curriculum Strategy, translating insights into a living program experience that advances Jordan's financial sector.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const phaseButtons = document.querySelectorAll('.phase-button');
+        const phaseDetail = document.getElementById('phaseDetail');
+        const roleSelect = document.getElementById('roleSelect');
+        const roleOutput = document.getElementById('roleOutput');
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContent = document.getElementById('tabContent');
+        const innovationSlider = document.getElementById('innovationSlider');
+        const innovationLabel = document.getElementById('innovationLabel');
+        const studioHours = document.getElementById('studioHours');
+        const industrySessions = document.getElementById('industrySessions');
+        const portfolioPieces = document.getElementById('portfolioPieces');
+        const backToTop = document.getElementById('backToTop');
+
+        const phaseData = {
+            foundations: {
+                title: 'Phase 1 · Technical Foundations (6 C.H.)',
+                summary: 'Learners build analytical fluency with core tools, establishing a shared vocabulary for data-driven finance.',
+                courses: [
+                    'Python scripting for financial analytics',
+                    'SQL and data management within banking ecosystems',
+                    'Data ethics and responsible use fundamentals'
+                ],
+                assessment: 'Weekly labs and a “data-story sprint” where teams translate raw banking datasets into executive-ready insights.'
+            },
+            core: {
+                title: 'Phase 2 · Core Applications (15 C.H.)',
+                summary: 'Applied modules connect learners to digital payments, blockchain, cybersecurity, and machine learning for risk.',
+                courses: [
+                    'Digital payments, open banking APIs, and product monetization',
+                    'Blockchain concepts for financial services and digital identity',
+                    'AI and machine learning for credit, fraud, and operational risk',
+                    'Advanced financial modeling with emerging tech overlays',
+                    'Cybersecurity and RegTech automation for compliance operations'
+                ],
+                assessment: 'Mid-phase innovation challenge: teams ship a prototype with product brief, risk controls, and adoption plan.'
+            },
+            innovation: {
+                title: 'Phase 3 · Innovation Leadership (9 C.H.)',
+                summary: 'Learners orchestrate complex initiatives, guiding stakeholders through data storytelling and strategic pilots.',
+                courses: [
+                    'Business intelligence and narrative dashboards for executives',
+                    'AI applications, governance, and responsible innovation',
+                    'Capstone venture lab with industry mentors and sandbox access'
+                ],
+                assessment: 'Capstone demo-day judged by banks, regulators, and FinTech partners with emphasis on viability and compliance.'
+            }
+        };
+
+        const roleData = {
+            transformation: {
+                title: 'Digital Transformation Officer',
+                mandate: 'Translate strategic imperatives into executable digital initiatives across channels.',
+                skills: [
+                    'Payments/API commercialization strategy',
+                    'Agile project orchestration with compliance checkpoints',
+                    'Change management and stakeholder storytelling'
+                ],
+                experiences: [
+                    'Digital payments lab',
+                    'Innovation governance clinic',
+                    'Capstone executive presentation'
+                ],
+                impact: [
+                    'Accelerates time-to-market for digital banking features',
+                    'Bridges product, technology, and risk teams',
+                    'Supports CBJ-aligned innovation sandboxes'
+                ]
+            },
+            analyst: {
+                title: 'Financial Data & BI Analyst',
+                mandate: 'Convert financial data into actionable insights for lending, treasury, and customer engagement.',
+                skills: [
+                    'Advanced SQL, Python, and data quality routines',
+                    'Dashboard storytelling for executive decisions',
+                    'Predictive analytics for portfolio monitoring'
+                ],
+                experiences: [
+                    'Data storytelling studio',
+                    'Risk analytics sprint',
+                    'Peer-coded model repository'
+                ],
+                impact: [
+                    'Improves risk-adjusted returns with proactive insights',
+                    'Automates reporting workflows for regulatory deadlines',
+                    'Feeds continuous improvement loops for product teams'
+                ]
+            },
+            risk: {
+                title: 'Tech Risk & Compliance Analyst',
+                mandate: 'Ensure resilience and adherence across digital banking operations and RegTech initiatives.',
+                skills: [
+                    'RegTech automation scripting and dashboards',
+                    'AI model governance and bias mitigation',
+                    'Cybersecurity controls and incident response'
+                ],
+                experiences: [
+                    'RegTech automation lab',
+                    'Risk AI war-game',
+                    'CBJ policy sandbox brief'
+                ],
+                impact: [
+                    'Drives responsible AI adoption within compliance teams',
+                    'Reduces audit remediation cycles',
+                    'Strengthens resilience for digital service rollouts'
+                ]
+            },
+            product: {
+                title: 'FinTech Product Owner',
+                mandate: 'Lead the lifecycle of digital financial products from discovery to launch.',
+                skills: [
+                    'Product discovery with user research and data insights',
+                    'Backlog prioritization and agile delivery ceremonies',
+                    'Financial modeling for product viability and pricing'
+                ],
+                experiences: [
+                    'API commercialization sprint',
+                    'Customer journey prototyping studio',
+                    'Venture pitch capstone'
+                ],
+                impact: [
+                    'Launches customer-centric offerings faster',
+                    'Ensures compliance integration from day one',
+                    'Aligns tech initiatives with strategic outcomes'
+                ]
+            }
+        };
+
+        const tabData = {
+            payments: {
+                title: 'Digital Payments Lab',
+                partner: 'Industry Partner: Jordan Payments & Clearing Company',
+                description: 'Learners map customer journeys, prototype API calls, and develop monetization models for new payment features.',
+                deliverables: [
+                    'Live API integration demo',
+                    'Regulatory compliance checklist',
+                    'Executive narrative and go-to-market plan'
+                ]
+            },
+            blockchain: {
+                title: 'Blockchain Diagnostic',
+                partner: 'Industry Partner: Central Bank of Jordan Sandbox',
+                description: 'Teams evaluate blockchain use cases for identity, remittances, and supply chain finance with feasibility assessments.',
+                deliverables: [
+                    'Use case feasibility matrix',
+                    'Risk and governance framework',
+                    'Pilot readiness scorecard'
+                ]
+            },
+            risk: {
+                title: 'Risk AI War-Game',
+                partner: 'Industry Partner: Bank Risk Councils',
+                description: 'Learners stress-test AI risk models against simulated market shocks and regulatory audits.',
+                deliverables: [
+                    'Bias and explainability dossier',
+                    'Incident response playbook',
+                    'Board-level briefing deck'
+                ]
+            },
+            story: {
+                title: 'Data Storytelling Studio',
+                partner: 'Industry Partner: ABJ Talent Consortium',
+                description: 'Participants craft executive dashboards and narratives that inform investment and compliance decisions.',
+                deliverables: [
+                    'Interactive BI dashboards',
+                    'Narrative story arc and insight briefs',
+                    'Actionable decision scenarios'
+                ]
+            }
+        };
+
+        function renderPhase(phaseKey) {
+            const phase = phaseData[phaseKey];
+            if (!phase) return;
+            phaseDetail.innerHTML = `<div class="space-y-4">`
+                + `<div>`
+                + `<h3 class="text-2xl font-semibold text-white">${phase.title}</h3>`
+                + `<p class="mt-2 text-slate-300">${phase.summary}</p>`
+                + `</div>`
+                + `<div>`
+                + `<p class="text-xs uppercase tracking-[0.2em] text-orange-300">Course Threads</p>`
+                + `<ul class="mt-2 space-y-2 list-disc list-inside">${phase.courses.map(item => `<li>${item}</li>`).join('')}</ul>`
+                + `</div>`
+                + `<div>`
+                + `<p class="text-xs uppercase tracking-[0.2em] text-orange-300">Assessment Signal</p>`
+                + `<p class="mt-2 text-slate-300">${phase.assessment}</p>`
+                + `</div>`
+                + `</div>`;
+        }
+
+        function renderRole(roleKey) {
+            const role = roleData[roleKey];
+            if (!role) return;
+            roleOutput.innerHTML = `<div class="glass rounded-3xl border border-orange-500/30 p-6 space-y-4">`
+                + `<div>`
+                + `<p class="text-xs uppercase tracking-[0.2em] text-orange-300">Role Mandate</p>`
+                + `<h3 class="mt-2 text-2xl font-semibold text-white">${role.title}</h3>`
+                + `<p class="mt-2 text-slate-300">${role.mandate}</p>`
+                + `</div>`
+                + `<div class="grid gap-4 md:grid-cols-3">`
+                + `<div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">`
+                + `<p class="text-xs uppercase tracking-[0.2em] text-orange-300">Core Skills</p>`
+                + `<ul class="mt-2 space-y-2 list-disc list-inside">${role.skills.map(item => `<li>${item}</li>`).join('')}</ul>`
+                + `</div>`
+                + `<div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">`
+                + `<p class="text-xs uppercase tracking-[0.2em] text-orange-300">Signature Experiences</p>`
+                + `<ul class="mt-2 space-y-2 list-disc list-inside">${role.experiences.map(item => `<li>${item}</li>`).join('')}</ul>`
+                + `</div>`
+                + `<div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">`
+                + `<p class="text-xs uppercase tracking-[0.2em] text-orange-300">Impact</p>`
+                + `<ul class="mt-2 space-y-2 list-disc list-inside">${role.impact.map(item => `<li>${item}</li>`).join('')}</ul>`
+                + `</div>`
+                + `</div>`
+                + `</div>`;
+        }
+
+        function renderTab(tabKey) {
+            const tab = tabData[tabKey];
+            if (!tab) return;
+            tabContent.innerHTML = `<div class="rounded-3xl border border-orange-400/30 bg-orange-500/10 p-6 space-y-4">`
+                + `<div>`
+                + `<p class="text-xs uppercase tracking-[0.2em] text-orange-200">${tab.partner}</p>`
+                + `<h3 class="mt-2 text-2xl font-semibold text-white">${tab.title}</h3>`
+                + `<p class="mt-3 text-slate-200">${tab.description}</p>`
+                + `</div>`
+                + `<div>`
+                + `<p class="text-xs uppercase tracking-[0.2em] text-orange-200">Key Deliverables</p>`
+                + `<ul class="mt-2 space-y-2 list-disc list-inside">${tab.deliverables.map(item => `<li>${item}</li>`).join('')}</ul>`
+                + `</div>`
+                + `</div>`;
+        }
+
+        phaseButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                phaseButtons.forEach(btn => {
+                    btn.classList.remove('border-orange-500/50', 'bg-orange-500/15');
+                    btn.classList.add('border-slate-800', 'bg-slate-900/70');
+                });
+                button.classList.remove('border-slate-800', 'bg-slate-900/70');
+                button.classList.add('border-orange-500/50', 'bg-orange-500/15');
+                renderPhase(button.dataset.phase);
+            });
+        });
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('border-orange-500/60', 'bg-orange-500/20');
+                    btn.classList.add('border-slate-700', 'bg-slate-900/70');
+                });
+                button.classList.remove('border-slate-700', 'bg-slate-900/70');
+                button.classList.add('border-orange-500/60', 'bg-orange-500/20');
+                renderTab(button.dataset.target);
+            });
+        });
+
+        roleSelect.addEventListener('change', () => {
+            renderRole(roleSelect.value);
+        });
+
+        innovationSlider.addEventListener('input', () => {
+            const value = Number(innovationSlider.value);
+            const labels = {
+                1: 'Foundations Focus',
+                2: 'Balanced',
+                3: 'Innovation Forward',
+                4: 'Venture Builder'
+            };
+            innovationLabel.textContent = labels[value] || 'Balanced';
+            const baseStudio = 80;
+            const baseIndustry = 10;
+            const basePortfolio = 6;
+            studioHours.textContent = baseStudio + value * 5;
+            industrySessions.textContent = baseIndustry + value;
+            portfolioPieces.textContent = basePortfolio + value;
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                backToTop.classList.remove('opacity-0');
+                backToTop.classList.add('opacity-100');
+            } else {
+                backToTop.classList.add('opacity-0');
+                backToTop.classList.remove('opacity-100');
+            }
+        });
+
+        backToTop.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        const ctx = document.getElementById('skillChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Data Fluency', 'Product Strategy', 'RegTech Literacy', 'AI Ethics', 'Storytelling', 'Innovation Leadership'],
+                datasets: [{
+                    label: 'Cohort Readiness',
+                    data: [78, 82, 75, 68, 88, 80],
+                    backgroundColor: 'rgba(194, 65, 12, 0.25)',
+                    borderColor: '#C2410C',
+                    borderWidth: 2,
+                    pointBackgroundColor: '#F97316'
+                }]
+            },
+            options: {
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(148, 163, 184, 0.3)' },
+                        grid: { color: 'rgba(148, 163, 184, 0.2)' },
+                        suggestedMin: 40,
+                        suggestedMax: 100,
+                        ticks: { display: false },
+                        pointLabels: {
+                            color: '#E2E8F0',
+                            font: { size: 11 }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => `${context.label}: ${context.parsed}`
+                        }
+                    }
+                }
+            }
+        });
+
+        renderPhase('foundations');
+        renderRole(roleSelect.value);
+        renderTab('payments');
+    </script>
+</body>
+</html>
